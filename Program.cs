@@ -121,11 +121,9 @@ namespace Assignment1
         public decimal GetNetSalary()
         {
            
-            Console.WriteLine("Enter your Salary");
-            netsalary = Convert.ToDecimal(Console.ReadLine());
-            
-               netsalary = netsalary - Basic;
-               return netsalary;
+             double deduction = 1000;
+            decimal salary = basic - (decimal)deduction;
+            return salary;
                      
         }
     }
